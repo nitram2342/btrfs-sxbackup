@@ -69,7 +69,7 @@ setup(
     description='Incremental btrfs snapshot backups with push/pull support via SSH',
     long_description=open('README.rst').read(),
     data_files=[("man/man1/", glob.glob(os.path.join(DOC_MAN_PATH, '*.1')))],
-    install_requires=['sphinx'],
+    #install_requires=['sphinx'],
     classifiers=[
         'Environment :: Console',
         'Intended Audience :: End Users/Desktop',
@@ -84,7 +84,7 @@ setup(
     entry_points={
         'console_scripts': ['btrfs-sxbackup = btrfs_sxbackup.__main__:main']
     },
-    cmdclass={
-        'sdist': CustomSdist
-    }
+    #cmdclass={
+    #    'sdist': CustomSdist
+    #}
 )
